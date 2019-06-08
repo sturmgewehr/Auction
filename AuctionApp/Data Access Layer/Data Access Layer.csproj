@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppContext.cs" />
+    <Compile Include="Initializer\DbInitializer.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Models\AuctionLot.cs" />
     <Compile Include="Models\CreditCard.cs" />

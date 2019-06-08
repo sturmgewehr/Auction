@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Data_Access_Layer.Models
 {
-    class Profile
+    public class Profile
     {
         [Key]
         public int Id { get; set; }

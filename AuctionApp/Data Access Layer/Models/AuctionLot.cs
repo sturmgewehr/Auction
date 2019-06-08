@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Data_Access_Layer.Models
 {
-    class AuctionLot
+    public class AuctionLot
     {
         [Key]
         public int Id { get; set; }

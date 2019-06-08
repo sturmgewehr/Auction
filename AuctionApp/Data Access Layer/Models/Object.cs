@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Data_Access_Layer.Models
 {
-    class Object
+    public class Object
     {
         [Key]
         public int Id { get; set; }
