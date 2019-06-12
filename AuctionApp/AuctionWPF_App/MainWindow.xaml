@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AuctionWPF_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800">
+        Title="Auction" Height="500" Width="800" ResizeMode="NoResize" >
     <Window.Resources>
         <Style x:Key="Description" TargetType="Label">
             <Setter Property="FontSize" Value="9"/>
@@ -98,7 +98,44 @@
         </DataGrid>
 
         <Grid Grid.Column="3" Background="LightGray">
-            <
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="22"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="22"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="22"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Label HorizontalAlignment="Center">Object Information</Label>
+            </Border>
+
+            <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Label Style="{DynamicResource Description}">Name</Label>
+            </Border>
+            <Border Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Label>N A M E</Label>
+            </Border>
+
+            <Border Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                <Label Style="{DynamicResource Description}">Price</Label>
+            </Border>
+            <Border Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                <Label>P R I C E</Label>
+            </Border>
+
+            <Border Grid.Row="5" BorderBrush="Black" BorderThickness="1">
+                <Label Style="{DynamicResource Description}">Description</Label>
+            </Border>
+            <Border Grid.Row="6" BorderBrush="Black" BorderThickness="1">
+                <Label>
+                    <Label.Content>
+                        <TextBlock TextWrapping="Wrap">D E S C R I P T I O N _ _ _ _ _ _ - - - - - _ _ _ _ _ - - - -  A Z A Z A</TextBlock>
+                    </Label.Content>
+                </Label>
+            </Border>
         </Grid>
         
     </Grid>
