@@ -5,8 +5,101 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AuctionWPF_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="800">
+    <Window.Resources>
+        <Style x:Key="Description" TargetType="Label">
+            <Setter Property="FontSize" Value="9"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>
+    </Window.Resources>
+
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="22"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+                <RowDefinition Height="22"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="22"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="22"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="22"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="22"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Label HorizontalAlignment="Center">P R O F I L E</Label>
+            </Border>
+
+            <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Label Style="{DynamicResource Description}" HorizontalAlignment="Right">id</Label>
+            </Border>
+            <Border Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Label  HorizontalAlignment="Right">ID</Label>
+            </Border>
+            
+            <Border Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                <Image>
+                    <Image.Source>
+                        <BitmapImage UriSource="C:\Users\Aspire\Desktop\legal\свастика-png-2.png"/>
+                    </Image.Source>
+                </Image>
+            </Border>
+
+            <Border Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                <Label Style="{DynamicResource Description}" >Login</Label>
+            </Border>
+            <Border Grid.Row="5" BorderBrush="Black" BorderThickness="1">
+                <Label>L O G I N</Label>
+            </Border>
+
+            <Border Grid.Row="6" BorderBrush="Black" BorderThickness="1">
+                <Label Style="{DynamicResource Description}" >Name</Label>
+            </Border>
+            <Border Grid.Row="7" BorderBrush="Black" BorderThickness="1">
+                <Label >N A M E</Label>
+            </Border>
+
+            <Border Grid.Row="8" BorderBrush="Black" BorderThickness="1">
+                <Label Style="{DynamicResource Description}" >Surname</Label>
+            </Border>
+            <Border Grid.Row="9" BorderBrush="Black" BorderThickness="1">
+                <Label >S U R N A M E</Label>
+            </Border>
+
+            <Border Grid.Row="10" BorderBrush="Black" BorderThickness="1">
+                <Label Style="{DynamicResource Description}" >Age</Label>
+            </Border>
+            <Border Grid.Row="11" BorderBrush="Black" BorderThickness="1">
+                <Label >A G E</Label>
+            </Border>
+
+            <Border Grid.Row="12" BorderBrush="Black" BorderThickness="1">
+                <Label Style="{DynamicResource Description}" >Phonenumber</Label>
+            </Border>
+            <Border Grid.Row="13" BorderBrush="Black" BorderThickness="1">
+                <Label >P H O N E N U M B E R</Label>
+            </Border>
+        </Grid>
+
+        <DataGrid Grid.Column="1" Grid.ColumnSpan="2">
+            
+        </DataGrid>
+
+        <Grid Grid.Column="3" Background="LightGray">
+            <
+        </Grid>
         
     </Grid>
 </Window>

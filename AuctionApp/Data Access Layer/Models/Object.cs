@@ -16,6 +16,8 @@ namespace Data_Access_Layer.Models
         public string Name { get; set; }
         [Required]
         public decimal Price { get; set; }
+        [Required]
+        public string Description { get; set; }
         [ForeignKey("UserId")]
         public User User { get; set; }
         [ForeignKey("AuctionId")]

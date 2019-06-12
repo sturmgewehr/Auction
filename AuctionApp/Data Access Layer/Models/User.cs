@@ -15,7 +15,14 @@ namespace Data_Access_Layer.Models
         [Required]
         public string Login { get; set; }
         [Required]
-        public string Password { get; set; }
+        private string Password;
+
+        public string PropPassword
+        {
+            get { return Password; }
+            set { Password = value; }
+        }
+
         [ForeignKey("ProfileId")]
         public Profile Profile { get; set; }
         [ForeignKey("ObjectsId")]
