@@ -1,0 +1,60 @@
+﻿<Window x:Class="AuctionWPF_App.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AuctionWPF_App"
+        mc:Ignorable="d"
+        Title="Registration Window" Height="450" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="Labels" TargetType="Label">
+            <Setter Property="FontSize" Value="13"></Setter>
+            <Setter Property="Margin" Value="30, 10, 10, 10"></Setter>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="10, 10, 30, 10"></Setter>
+        </Style>
+        
+    </Window.Resources>
+    
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.ColumnSpan="2" Content="Registration" FontSize="30" HorizontalAlignment="Center"></Label>
+        <Label Grid.Row="1" Content="Login:" Style="{DynamicResource Labels}" ></Label>
+        <Label Grid.Row="2" Content="Password: " Style="{DynamicResource Labels}" ></Label>
+        <Label Grid.Row="3" Content="Name: " Style="{DynamicResource Labels}" ></Label>
+        <Label Grid.Row="4" Content="Surname: " Style="{DynamicResource Labels}" ></Label>
+        <Label Grid.Row="5" Content="Age: " Style="{DynamicResource Labels}"></Label>
+        <Label Grid.Row="6" Content="Phonenumber: " Style="{DynamicResource Labels}"></Label>
+        <Label Grid.Row="7" Content="CreditCard number: " Style="{DynamicResource Labels}"></Label>
+
+        <TextBox Name="Box1" Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox Name="Box2" Grid.Row="2" Grid.Column="1"></TextBox>
+        <TextBox Name="Box3" Grid.Row="3" Grid.Column="1"></TextBox>
+        <TextBox Name="Box4" Grid.Row="4" Grid.Column="1"></TextBox>
+        <TextBox Name="Box5" Grid.Row="5" Grid.Column="1"></TextBox>
+        <TextBox Name="Box6" Grid.Row="6" Grid.Column="1"></TextBox>
+        <TextBox Name="Box7" Grid.Row="7" Grid.Column="1"></TextBox>
+
+        <Button Grid.Row="8" Grid.ColumnSpan="2" FontSize="20" Margin="5" Click="Confirm_Button_Click">Confirm</Button>
+
+    </Grid>
+</Window>

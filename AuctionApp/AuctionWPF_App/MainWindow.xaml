@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AuctionWPF_App"
         mc:Ignorable="d"
-        Title="Auction" Height="500" Width="800" ResizeMode="NoResize" >
+        Title="Auction" Height="500" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
     <Window.Resources>
         <Style x:Key="Description" TargetType="Label">
-            <Setter Property="FontSize" Value="9"/>
+            <Setter Property="FontSize" Value="8"/>
             <Setter Property="HorizontalAlignment" Value="Right"/>
         </Style>
     </Window.Resources>

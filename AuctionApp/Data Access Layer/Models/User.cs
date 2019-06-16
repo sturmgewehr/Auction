@@ -20,7 +20,11 @@ namespace Data_Access_Layer.Models
         public string PropPassword
         {
             get { return Password; }
-            set { Password = value; }
+            set
+            {
+                
+                Password = value;
+            }
         }
 
         [ForeignKey("ProfileId")]

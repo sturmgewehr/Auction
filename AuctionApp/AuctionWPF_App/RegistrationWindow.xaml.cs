@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,21 +11,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace AuctionWPF_App
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for RegistrationWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RegistrationWindow : Window
     {
-        public MainWindow()
+        public RegistrationWindow()
         {
             InitializeComponent();
-            AuthorizationWindow authorizationWindow = new AuthorizationWindow();
-            authorizationWindow.ShowDialog();
+        }
+
+        private void Confirm_Button_Click(object sender, RoutedEventArgs e)
+        {
+            //if(Box3.Text != "" && Box4.Text != "" && Box5.Text != "" && Box6.Text != "" && Box7.Text != "")
         }
     }
 }
